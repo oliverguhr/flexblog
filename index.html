@@ -1,0 +1,253 @@
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,400italic' rel='stylesheet' type='text/css'>
+
+<style>
+	.wrapper {
+		display: -webkit-box;
+		display: -moz-box;
+		display: -ms-flexbox;
+		display: -webkit-flex;
+		display: flex;
+		-webkit-flex-flow: row wrap;
+		flex-flow: row wrap;
+		text-align: center;
+	}
+	
+	.wrapper>* {
+		padding: 1px;
+		flex: 1 100%;
+	}
+	
+	header {
+		padding: 0px;
+	}
+	
+	.footer {
+		background: white;
+		border-top: 1px solid #eee;
+	}
+	
+	.background {
+		background: rgba(0, 0, 0, 0.03);
+	}
+	
+	.main {
+		text-align: left;
+		padding-top: 40px;
+	}
+	
+	.aside-1 {}
+	
+	.aside-2 {}
+	
+	@media (min-width: 1000px) {
+		.halfWidth {
+			width: 50%;
+			float: left;
+			margin-right: 2em;
+		}
+	}
+	
+	@media (max-width: 1000px) {
+		.halfWidth {
+			width: 100%;
+			float: none;
+			margin-right: 0em;
+		}
+	}
+	
+	@media all and (min-width: 600px) {
+		.aside {
+			flex: 1 auto;
+		}
+	}
+	
+	@media all and (min-width: 800px) {
+		.main {
+			flex: 3 0px;
+		}
+		.aside-1 {
+			order: 1;
+		}
+		.main {
+			order: 2;
+		}
+		.aside-2 {
+			order: 3;
+		}
+		.footer {
+			order: 4;
+		}
+	}
+	
+	body {
+		padding: 0em;
+		margin: 0em;
+		font-family: 'Open Sans', sans-serif;
+		color: #333;
+		line-height: 1.42857143;
+	}
+	
+	.logo {
+		font-weight: 300;
+		text-transform: uppercase;
+		color: black;
+		margin: 0;
+		line-height: 3em;
+	}
+	
+	.sizeXL {
+		font-size: 3.5em;
+	}
+	
+	.sizeL {
+		font-size: 2em;
+	}
+	
+	.sizeS {
+		font-size: 1em;
+	}
+	
+	.text {
+		font-size: 1.1em;
+		line-height: 1.6em;
+	}
+	
+	.box {
+		background-color: white;
+		box-shadow: 0px 3px 4px 0px rgba(0, 0, 0, 0.03);
+		overflow: hidden;
+		margin-bottom: 3.5em;
+	}
+	
+	.box .content {
+		margin: 20px;
+	}
+	
+	.fullWidth {
+		width: 100%;
+	}
+	
+	.button {
+		display: inline-block;
+		padding: 8px 17px;
+		margin-bottom: 0;
+		font-size: 0.8em;
+		line-height: 1.5em;
+		text-align: center;
+		white-space: nowrap;
+		vertical-align: middle;
+		-ms-touch-action: manipulation;
+		touch-action: manipulation;
+		cursor: pointer;
+		-webkit-user-select: none;
+		-moz-user-select: none;
+		-ms-user-select: none;
+		user-select: none;
+		background-image: none;
+		background-color: black;
+		text-transform: uppercase;
+		border-radius: 0px;
+		color: white;
+		letter-spacing: 1px;
+	}
+	
+	.button:hover {
+		transform: rotateX(180deg);
+	}
+	
+	a {
+		text-decoration: none;
+		color: #3DA7FF;
+	}
+	
+	nav {
+		border-top: 1px solid #eee;
+		text-transform: uppercase;
+	}
+	
+	nav .navigation li {
+		padding-right: 3em;
+	}
+	
+	nav a {
+		color: #333;
+		font-weight: 300;
+	}
+	
+	nav a:hover {
+		border-bottom: 2px solid #ddd
+	}
+	
+	.navigation {
+		list-style-type: none;
+	}
+	
+	.navigation li {
+		display: inline;
+		padding-right: 1em;
+	}
+	
+	h2 {
+		font-weight: 400;
+		font-size: 2em;
+	}
+</style>
+
+<body>
+	<div class="wrapper">
+		<header>
+			<h1 class="logo sizeL">CODE</h1>
+			<nav>
+				<ul class="navigation">
+					<li><a href="#">Home</a></li>
+					<li><a href="#">About</a></li>
+					<li><a href="#">Contact</a></li>
+				</ul>
+			</nav>
+		</header>
+		<div class="main background">
+			<article class="box">
+				<img src="1.jpg" class="halfWidth" />
+				<div class="content">
+					<h2>Vestibulum tortor</h2>
+					<p class="text">Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam,
+						feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. </p>
+					<a class="button">Read Full Post</a>
+				</div>
+
+			</article>
+
+			<article class="box">
+				<img src="2.jpg" class="fullWidth" />
+				<div class="content">
+					<h2>Pellentesque habitant</h2>
+					<p class="text">Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam,
+						feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies
+						mi vitae est. Mauris placerat eleifend leo. Pellentesque habitant morbi tristique senectus et netus et malesuada fames
+						ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit
+						amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Pellentesque habitant morbi
+						tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies
+						eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat
+						eleifend leo.</p>
+				</div>
+			</article>		
+			<article class="box">
+				<p class="content text">Demo pictures by <a href="https://unsplash.com">Unsplash</a>.</p>
+			</article>
+
+		</div>
+		<aside class="aside aside-1 background"></aside>
+		<aside class="aside aside-2 background"></aside>
+		<footer class="footer">
+			<ul class="navigation">
+				<li>Home</li>
+				<li>About</li>
+				<li>Contact</li>
+			</ul>
+		</footer>
+	</div>
+</body>
+
+</html>
