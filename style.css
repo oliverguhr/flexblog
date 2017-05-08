@@ -54,7 +54,7 @@
 		}
 	}
 	
-	@media all and (min-width: 800px) {
+	@media all and (min-width: 1025px) {
 		.main {
 			flex: 3 0px;
 		}
