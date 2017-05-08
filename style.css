@@ -82,27 +82,21 @@
 	
 	.logo {
 		font-weight: 300;
+        font-size: 50px;
 		text-transform: uppercase;
 		color: black;
 		margin: 0;
-		line-height: 3em;
-	}
-	
-	.sizeXL {
-		font-size: 3.5em;
-	}
-	
-	.sizeL {
-		font-size: 2em;
-	}
-	
-	.sizeS {
-		font-size: 1em;
-	}
-	
+		line-height: 120px;
+	}    
+		
 	.text {
-		font-size: 1.1em;
-		line-height: 1.6em;
+		font-size: 22px;
+		line-height: 36px;
+	}
+
+    h2 {
+		font-weight: 400;
+		font-size: 36px;
 	}
 	
 	.box {
@@ -178,9 +172,4 @@
 	.navigation li {
 		display: inline;
 		padding-right: 1em;
-	}
-	
-	h2 {
-		font-weight: 400;
-		font-size: 2em;
 	}
