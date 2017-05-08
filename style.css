@@ -94,6 +94,14 @@
 		line-height: 36px;
 	}
 
+    blockquote {        
+        font-size: 22px;
+        line-height: 36px;
+        border-left: solid 4px #3DA7FF;
+        margin: 0px;
+        padding: 10px 0px 10px 30px;
+    }
+
     h2 {
 		font-weight: 400;
 		font-size: 36px;
