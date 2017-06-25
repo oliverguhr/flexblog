@@ -45,12 +45,21 @@
 			width: 100%;
 			float: none;
 			margin-right: 0em;
+		}		
+	}
+
+	@media (max-width: 600px) {
+		body{
+			font-size: 18px;
 		}
 	}
 	
 	@media all and (min-width: 600px) {
 		.aside {
 			flex: 1 auto;
+		}	
+		body{
+			font-size: 22px;
 		}
 	}
 	
@@ -77,15 +86,13 @@
 		margin: 0em;
 		font-family: 'Open Sans', sans-serif;
 		color: #333;
-		line-height: 1.42857143;
-		font-size: 22px;
+		line-height: 1.42857143;		
 	}
 	
 	.logo {
 		font-weight: 300;
         font-size: 50px;
-		text-transform: uppercase;
-		color: black;
+		text-transform: uppercase;		
 		margin: 0;
 		line-height: 120px;
 	}    
