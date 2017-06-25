@@ -78,6 +78,7 @@
 		font-family: 'Open Sans', sans-serif;
 		color: #333;
 		line-height: 1.42857143;
+		font-size: 22px;
 	}
 	
 	.logo {
@@ -89,13 +90,11 @@
 		line-height: 120px;
 	}    
 		
-	.text {
-		font-size: 22px;
+	.text {		
 		line-height: 36px;
 	}
 
-    blockquote {        
-        font-size: 22px;
+    blockquote {                
         line-height: 36px;
         border-left: solid 4px #3DA7FF;
         margin: 0px;
@@ -167,6 +166,7 @@
 	nav a {
 		color: #333;
 		font-weight: 300;
+		font-size: 17px;
 	}
 	
 	nav a:hover {
